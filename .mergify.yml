@@ -1,9 +1,0 @@
-merge_protections:
-  - name: Merge when Python CI passes
-    if:
-      - base = main
-    success_conditions:
-      - check-success = Python CI
-      - "title ~=
-        ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:(.+))\
-        ?:"
